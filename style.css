@@ -106,3 +106,16 @@ header .menu-toggle{display:none}
   .hero figure{padding-top:0;margin-top:0}
   .hero figure img{object-position:50% 35%}
 }
+
+/* Rodapé institucional — compacto e integrado à identidade Manauara. */
+.site-footer{display:block;background:var(--coffee);color:var(--cream);padding:44px max(var(--gutter),calc((100% - var(--content))/2)) 22px;font-size:14px}
+.footer-inner{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.65fr) minmax(0,1fr);gap:clamp(22px,4vw,56px);align-items:start;max-width:1120px;margin:auto}
+.footer-inner>div{min-width:0}.footer-brand .brand{display:inline-block;color:var(--cream);font-size:30px}.footer-brand p,.footer-contact p{color:#dce3d0;font-size:13px;line-height:1.65;margin:14px 0 8px}
+.footer-nav{display:flex;flex-direction:column;align-items:flex-start;gap:6px}.footer-nav strong,.footer-contact>strong{display:block;font-size:14px;font-weight:600;margin-bottom:8px;color:var(--cream)}
+.footer-nav a{color:#dce3d0;min-height:30px;display:inline-flex;align-items:center;font-size:13px}.footer-social{gap:10px;margin-top:14px}.site-footer .footer-social a{display:grid;place-items:center;width:44px;height:44px;min-height:44px;border:1px solid #dce3d055;border-radius:50%;transition:background .2s,color .2s}.site-footer .footer-social svg{width:20px;height:20px}
+.footer-bottom{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px 24px;max-width:1120px;margin:30px auto 0;padding-top:18px;border-top:1px solid #dce3d035;font-size:11px;color:#dce3d0}
+.footer-credit,.footer-top{display:inline-flex;align-items:center;gap:4px;min-height:30px}.footer-credit strong{font-weight:600;color:#fffdf7}.footer-top svg{flex-shrink:0}
+.site-footer a:focus-visible{outline-color:#dce3d0}.footer-nav a:hover,.footer-credit:hover,.footer-top:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}
+@media(hover:hover){.site-footer .footer-social a:hover{background:var(--cream);color:var(--coffee)}}
+@media(max-width:760px){.site-footer{padding:34px var(--gutter) calc(78px + env(safe-area-inset-bottom,0px))}.footer-inner{grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 16px}.footer-brand{grid-column:1/-1}.footer-brand .brand{font-size:28px}.footer-bottom{margin-top:24px;gap:4px 18px;align-items:flex-start}.footer-bottom>span{flex-basis:100%;line-height:1.5}.footer-top{margin-left:auto}}
+@media(max-width:360px){.footer-inner{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-bottom{flex-direction:column;gap:2px}.footer-top{margin-left:0}}
