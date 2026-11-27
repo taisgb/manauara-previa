@@ -90,3 +90,19 @@ header .menu-toggle{display:none}
 }
 @media(min-width:1021px) and (max-width:1120px){header{gap:14px;padding-inline:3%}header #site-nav{gap:12px;font-size:12px}}
 @media(max-width:1020px){header #site-nav a{font-weight:500}}
+
+/* Hero — sobe a fotografia sem criar um vazio entre a base e as faixas. */
+@media(min-width:761px){
+  .hero{align-items:center}
+  .hero>div{padding-bottom:clamp(28px,3vw,48px)}
+  .hero figure{align-self:center;margin-top:0;margin-bottom:clamp(20px,3vw,40px)}
+  .hero figure img{object-position:50% 38%}
+  .hero figcaption{bottom:16px}
+}
+@media(max-width:760px){
+  .hero{gap:8px;padding-top:28px}
+  .hero>div{padding-bottom:0}
+  .hero .proof{margin-top:12px}
+  .hero figure{padding-top:0;margin-top:0}
+  .hero figure img{object-position:50% 35%}
+}
